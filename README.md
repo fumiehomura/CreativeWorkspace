@@ -65,4 +65,16 @@ Node.jsが見つからない場合は、Node.js公式サイトからLTS版をイ
 
 ## 開発者・配布者向け
 
-公開前に `node scripts/self-test.js` と `node scripts/public-release-check.js` を実行してください。詳細は [DISTRIBUTION_CHECKLIST.md](DISTRIBUTION_CHECKLIST.md) にあります。正式公開前にライセンスを選択してください。
+公開前に `node scripts/self-test.js` と `node scripts/public-release-check.js` を実行してください。詳細は [DISTRIBUTION_CHECKLIST.md](DISTRIBUTION_CHECKLIST.md) にあります。ソースコードの利用条件は [LICENSE](LICENSE) を参照してください。
+
+## Official project
+
+このRepositoryは、作者 `fumiehomura` が管理するCreativeWorkspaceの公式Repositoryです。公式Releaseと公式配布物は、このRepositoryから提供されます。
+
+第三者によるForkや派生版は、作者が明示的に承認した場合を除き、CreativeWorkspaceの公式版ではありません。名称、ロゴ、公式アイコンなどの扱いについては [BRAND_POLICY.md](BRAND_POLICY.md) を参照してください。
+
+不具合や改善案はIssue、コードの改善提案はPull Requestで受け付ける予定です。提案を歓迎しますが、Pull Requestを公式版へ採用するかどうかは、Repository管理者がプロジェクトの方針、安全性、保守性を踏まえて判断します。貢献方法の詳細は [CONTRIBUTING.md](CONTRIBUTING.md)、セキュリティ問題の報告方針は [SECURITY.md](SECURITY.md) を参照してください。
+
+## ライセンス
+
+ソースコードは [MIT License](LICENSE) で公開されます。CreativeWorkspaceの名称、ロゴ、公式アイコンなどのブランド要素には、MIT Licenseとは別に [ブランドポリシー](BRAND_POLICY.md) が適用されます。
