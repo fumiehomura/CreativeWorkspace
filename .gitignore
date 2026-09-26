@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+
+# User data must never enter source control
+CreativeWorkspaceData/
+projects/
+backups/
+history/
+logs/
+cache/
+tmp/
+temp/
+
+# Local and secret configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+config.local.json
+
+# OS/editor/runtime files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*~

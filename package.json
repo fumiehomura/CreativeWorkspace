@@ -1,0 +1,1 @@
+{"name":"creative-workspace-local","version":"0.1.0","private":true,"description":"作品データをPC内だけに保存する創作管理アプリ","scripts":{"start":"node server.js","test":"node scripts/self-test.js","audit":"node scripts/public-release-check.js"}}
