@@ -31,6 +31,12 @@ CreativeWorkspaceは、小説・脚本・映像作品・ゲーム企画・世界
 
 Node.jsが見つからない場合は、Node.js公式サイトからLTS版をインストールしてください。CreativeWorkspace自身がソフトウェアを自動インストールすることはありません。
 
+## Windows Smart App Controlについて
+
+CreativeWorkspace V0.1は、PC内で動作するローカル実行型の試作版です。Windows 11でSmart App Controlが有効な場合、未署名の `start.bat` がブロックされることがあります。この警告は、必ずしもアプリが危険であることを意味するものではありません。
+
+ただし、CreativeWorkspaceを起動するためにSmart App Controlを無効化することは推奨しません。V0.1では配布形式上、この制限が残ります。今後のV0.2では、Windows上でより扱いやすい起動方式を検討しています。不安がある場合は利用を中止し、このREADMEと [SECURITY.md](SECURITY.md) を確認してください。
+
 ## データの保存場所
 
 作品、テンプレート、履歴、バックアップは、アプリのフォルダとは別の `CreativeWorkspaceData` フォルダに保存されます。標準では、展開したアプリフォルダと同じ階層に作成されます。
