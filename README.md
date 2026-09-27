@@ -37,6 +37,42 @@ CreativeWorkspace V0.1は、PC内で動作するローカル実行型の試作�
 
 ただし、CreativeWorkspaceを起動するためにSmart App Controlを無効化することは推奨しません。V0.1では配布形式上、この制限が残ります。今後のV0.2では、Windows上でより扱いやすい起動方式を検討しています。不安がある場合は利用を中止し、このREADMEと [SECURITY.md](SECURITY.md) を確認してください。
 
+## Smart App Controlでstart.batがブロックされる場合
+
+Windows 11のSmart App Controlが有効な環境では、未署名の `start.bat` がブロックされることがあります。
+
+CreativeWorkspaceを使用するためにSmart App Controlを無効化することは推奨しません。
+
+代わりに、PowerShellからCreativeWorkspaceを起動できます。
+
+### 必要なもの
+
+Node.js 18以降が必要です。
+
+Node.jsが利用できるか確認するには、PowerShellで次を実行してください。
+
+```powershell
+node --version
+```
+
+`v18`以上のバージョン番号が表示されれば利用できます。コマンドが見つからない場合は、Node.js公式サイトからLTS版をインストールしてください。
+
+### PowerShellから起動する手順
+
+1. ダウンロードしたZIPを任意のフォルダへ展開します。
+2. エクスプローラーで、`server.js` がある展開先フォルダを開きます。
+3. フォルダ内の何もない場所を右クリックし、「ターミナルで開く」を選択します。
+4. 開いたPowerShellで次を実行します。
+
+```powershell
+node server.js
+```
+
+5. `Creative Workspace: http://127.0.0.1:4318` と表示されたら、ブラウザーで `http://127.0.0.1:4318` を開きます。
+6. 終了するときは、PowerShellで `Ctrl+C` を押します。
+
+この方法は `start.bat` を使用しません。CreativeWorkspace公開版には、作者自身の作品データは含まれていません。収録されるサンプルは架空のデータのみです。
+
 ## データの保存場所
 
 作品、テンプレート、履歴、バックアップは、アプリのフォルダとは別の `CreativeWorkspaceData` フォルダに保存されます。標準では、展開したアプリフォルダと同じ階層に作成されます。
